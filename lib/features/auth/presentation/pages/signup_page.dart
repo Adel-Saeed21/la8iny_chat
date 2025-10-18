@@ -2,9 +2,13 @@ import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:laghiny_chat/features/auth/presentation/bloc/auth_cubit.dart';
 import 'package:laghiny_chat/features/auth/presentation/bloc/auth_state.dart';
+import 'package:laghiny_chat/features/auth/presentation/pages/home_page.dart';
 
 class SignupPage extends StatefulWidget {
+  const SignupPage({super.key});
+
   @override
+  // ignore: library_private_types_in_public_api
   _SignupPageState createState() => _SignupPageState();
 }
 

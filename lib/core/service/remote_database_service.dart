@@ -117,11 +117,14 @@ class RemoteDatabaseServiceImpl implements RemoteDatabaseService {
       query = queryBuilder(query);
     }
 
-    return query.snapshots().map((snapshot) {
-      final doc = snapshot.docChanges.firstOrNull?.doc;
-      if (doc == null) return null;
-      return fromMap(doc.data()!);
-    }).whereType<T>();
+   return query.snapshots().map((snapshot) {
+  final doc = snapshot.docChanges.firstOrNull?.doc;
+  if (doc == null || doc.data() == null) {
+    throw Exception("Document is null");
+  }
+  return fromMap(doc.data()!);
+});
+
   }
 
   @override

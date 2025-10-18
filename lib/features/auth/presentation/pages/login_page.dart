@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:laghiny_chat/features/auth/presentation/bloc/auth_cubit.dart';
 import 'package:laghiny_chat/features/auth/presentation/bloc/auth_state.dart';
+import 'package:laghiny_chat/features/auth/presentation/pages/home_page.dart';
 import 'package:laghiny_chat/features/auth/presentation/pages/signup_page.dart';
 
 class LoginPage extends StatefulWidget {

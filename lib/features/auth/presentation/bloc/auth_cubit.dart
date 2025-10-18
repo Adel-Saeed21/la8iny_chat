@@ -30,6 +30,9 @@ class AuthCubit extends Cubit<AuthState> {
     }
   }
 
+
+
+
   Future<void> signup({
     required String fullname,
     required String email,

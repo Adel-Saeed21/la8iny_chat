@@ -1,9 +1,10 @@
 import 'package:firebase_core/firebase_core.dart';
 import 'package:flutter/material.dart';
+import 'package:laghiny_chat/core/DI/service_locator.dart';
 import 'package:laghiny_chat/firebase_options.dart';
 
 void main() async {
- // initServiceLocator();
+  initServiceLocator();
 
   await Firebase.initializeApp(options: DefaultFirebaseOptions.currentPlatform);
   runApp(const MyApp());
