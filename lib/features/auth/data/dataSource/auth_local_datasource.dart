@@ -7,6 +7,7 @@ abstract class AuthLocalDataSource {
   Future<void> removeCachedUser();
 }
 
+// ignore: constant_identifier_names
 const String USER_CACHE_KEY = 'USER_CACHE_KEY';
 
 class AuthLocalDataSourceImpl implements AuthLocalDataSource {

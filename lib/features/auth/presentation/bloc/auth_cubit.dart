@@ -10,7 +10,7 @@ class AuthCubit extends Cubit<AuthState> {
   final AuthRepo _authRepository;
 
   Future<void> init() async {
-    final user = await _authRepository.getUser();
+    final user = await _authRepository.getUser(); 
     if (user != null) {
       emit(state.copyWith(status: AuthStatus.loggedIn, user: () => user));
     } else {
